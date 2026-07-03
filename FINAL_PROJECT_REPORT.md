@@ -195,6 +195,8 @@ Detail lengkap parameter dan response tersedia di Swagger (`/api/docs`) dan Post
 
 ![Swagger Docs](./docs/screenshots/swagger.png)
 ![Postman - Review](./docs/screenshots/review.png)
+![Login - Review](./docs/screenshots/login.png)
+![Course - Review](./docs/screenshots/course.png)
 ![Student Dashboard](./docs/screenshots/dashboard.png)
 
 ---
