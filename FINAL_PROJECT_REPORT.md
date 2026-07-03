@@ -184,16 +184,18 @@ Detail lengkap parameter dan response tersedia di Swagger (`/api/docs`) dan Post
 
 ## 9. Screenshot / Bukti Pengujian
 
-> Tempelkan screenshot pada bagian ini sebagai bukti pengujian.
-
 - [ ] Screenshot halaman Swagger (`/api/docs`) menampilkan seluruh endpoint
       ![Swagger Docs](./docs/screenshots/swagger.png)
+
 - [ ] Screenshot Django Administration
       ![Postman - Review](./docs/screenshots/review.png)
+
 - [ ] Screenshot Login Student
       ![Login - Review](./docs/screenshots/login.png)
+
 - [ ] Screenshot Course
       ![Course - Review](./docs/screenshots/course.png)
+
 - [ ] Screenshot Dashboard Student
       ![Student Dashboard](./docs/screenshots/dashboard.png)
 
