@@ -194,9 +194,9 @@ Detail lengkap parameter dan response tersedia di Swagger (`/api/docs`) dan Post
 - [ ] Screenshot hasil `python manage.py test` (semua test lulus)
 
 ```
-![Swagger Docs](/docs/screenshots/swagger.png)
-![Postman - Review](/docs/screenshots/review.png)
-![Student Dashboard](/docs/screenshots/dashboard.png)
+![Swagger Docs](./docs/screenshots/swagger.png)
+![Postman - Review](./docs/screenshots/review.png)
+![Student Dashboard](./docs/screenshots/dashboard.png)
 ```
 
 ---
