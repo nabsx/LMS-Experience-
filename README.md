@@ -60,24 +60,32 @@ Detail implementasi tiap fitur ada di [`FINAL_PROJECT_REPORT.md`](./FINAL_PROJEC
 
 ```
 .
-├── apps/
-│   ├── users/            # User model, auth, JWT
-│   ├── courses/          # Category, Course, Section, Lesson
-│   ├── enrollments/      # Enrollment, LessonProgress
-│   ├── reviews/          # Review, Wishlist
-│   └── dashboard/        # Endpoint agregasi dashboard
-├── config/
-│   ├── settings/
-│   │   ├── base.py
-│   │   ├── development.py
-│   │   └── production.py
-│   ├── api.py            # Registrasi NinjaAPI + semua router
-│   └── urls.py
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-├── .env.example
-├── manage.py
+├── core/                 # Django project configuration
+│   ├── settings.py       # Django settings
+│   ├── urls.py           # URL routing
+│   ├── asgi.py          # ASGI configuration
+│   ├── wsgi.py          # WSGI configuration
+│   └── __init__.py
+├── courses/             # Main app - User, Category, Course, Section, Lesson, Enrollment, Review, Wishlist
+│   ├── migrations/      # Database migrations
+│   ├── management/      # Custom commands (seed_demo_data, etc.)
+│   ├── models.py        # User, Category, Course, Section, Lesson, Enrollment, Review, Wishlist models
+│   ├── schemas.py       # Pydantic schemas untuk request/response
+│   ├── api.py          # Endpoint definitions (Django Ninja routes)
+│   ├── views.py        # View logic
+│   ├── admin.py        # Django Admin configuration
+│   ├── apps.py         # App configuration
+│   ├── tests.py        # Unit tests
+│   └── __init__.py
+├── docs/                # Postman collection, screenshots
+├── docker-compose.yml   # Docker Compose configuration
+├── Dockerfile          # Docker image definition
+├── requirements.txt    # Python dependencies
+├── .env.example        # Environment variables template
+├── manage.py          # Django management script
+├── jwt-signing.pem    # JWT private key (excluded from repo)
+├── jwt-signing.pub    # JWT public key (excluded from repo)
+├── FINAL_PROJECT_REPORT.md  # Project documentation
 └── README.md
 ```
 
