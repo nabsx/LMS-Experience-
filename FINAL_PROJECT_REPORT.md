@@ -6,13 +6,13 @@
 
 ## 1. Identitas
 
-|                    |                                    |
-| ------------------ | ---------------------------------- |
-| **Nama**           | NABHAAN AURYSHAFA ADHIGANA         |
-| **NIM**            | A11.2023.15254                     |
-| **Kelas**          | A11.4618                           |
-| **Mata Kuliah**    | Pemrograman Sisi Server (A11.4618) |
-| **URL Repository** |                                    |
+|                    |                                              |
+| ------------------ | -------------------------------------------- |
+| **Nama**           | NABHAAN AURYSHAFA ADHIGANA                   |
+| **NIM**            | A11.2023.15254                               |
+| **Kelas**          | A11.4618                                     |
+| **Mata Kuliah**    | Pemrograman Sisi Server (A11.4618)           |
+| **URL Repository** | https://github.com/nabsx/LMS-Experience-.git |
 
 ---
 
