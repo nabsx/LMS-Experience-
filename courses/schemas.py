@@ -4,7 +4,7 @@ from pydantic import Field
 
 # Schema untuk menerima data dari user (Input)
 class ReviewSchemaIn(Schema):
-    rating: int
+    rating: int = Field(ge=1, le=5)
     comment: Optional[str] = None
 
 # Schema untuk mengembalikan data ke user (Output)

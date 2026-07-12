@@ -72,7 +72,7 @@ def list_courses(request, filters: CourseFilterSchema = Query(...), sort_by: str
 # 2. Endpoint Rating & Review (Protected)
 @router.post("/{course_id}/reviews", auth=apiAuth)
 def create_review(request, course_id: int, data: ReviewSchemaIn):
-    student = request.user # Mengambil user asli dari token JWT
+    student = User.objects.get(pk=request.user.id) # Mengambil user asli dari token JWT
     if getattr(student, 'role', 'student') != 'student':
         raise HttpError(403, "Hanya student yang dapat memberikan review")
 
@@ -91,7 +91,7 @@ def create_review(request, course_id: int, data: ReviewSchemaIn):
 # 3. Endpoint Wishlist (Protected)
 @router.post("/{course_id}/wishlist", auth=apiAuth)
 def add_to_wishlist(request, course_id: int):
-    student = request.user
+    student = User.objects.get(pk=request.user.id)
     if getattr(student, 'role', 'student') != 'student':
         raise HttpError(403, "Hanya student yang memiliki wishlist")
 
@@ -102,7 +102,7 @@ def add_to_wishlist(request, course_id: int):
 # 4. Endpoint Cek Progress Belajar Student (Protected)
 @router.get("/{course_id}/progress", auth=apiAuth)
 def get_course_progress(request, course_id: int):
-    student = request.user
+    student = User.objects.get(pk=request.user.id)
     course = get_object_or_404(Course, id=course_id)
     
     total_lessons = Lesson.objects.filter(course=course).count()
