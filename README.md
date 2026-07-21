@@ -1,6 +1,6 @@
 # Simple LMS – Extended Backend
 
-Backend untuk Learning Management System (LMS) sederhana, dikembangkan sebagai Final Project mata kuliah **Pemrograman Sisi Server (A11.54403)** — Teknik Informatika, Universitas Dian Nuswantoro.
+Backend untuk Learning Management System (LMS) sederhana, dikembangkan sebagai Final Project mata kuliah **Pemrograman Sisi Server** — Teknik Informatika, Universitas Dian Nuswantoro.
 
 Project ini melanjutkan Simple LMS dari tugas capstone sebelumnya, dengan tambahan **Paket 1 – LMS Experience**: search & filter course lanjutan, rating/review/wishlist, curriculum & progress belajar detail, serta student dashboard.
 
